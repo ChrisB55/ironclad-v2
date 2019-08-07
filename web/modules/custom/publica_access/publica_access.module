@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains publica_access.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function publica_access_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the publica_access module.
+    case 'help.page.publica_access':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function publica_access_theme() {
+  return [
+    'publica_access' => [
+      'render element' => 'children',
+    ],
+  ];
+}
