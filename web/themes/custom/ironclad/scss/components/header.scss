@@ -2,24 +2,24 @@
 
 #navbar-top {
     padding: 0 .5rem;
-    background-color: #343a40;
+    background-color: #343a40 !important; 
     color: white;
 
 }
 
 .navbar {
-    background-color: #343a40;
+    background-color: #343a40 !important;
     color:white;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 #navbar-top.navbar-dark .nav-link:hover,
 #navbar-top.navbar-dark .nav-link:focus {
-    color: rgba(255, 255, 255, 0.75);
+    color: white;
 }
 
 #navbar-top.navbar-dark .nav-link {
-    color: rgba(255, 255, 255, 0.5);
+    color: white;
 }
 
 #navbar-top.navbar-light .nav-link:hover,
