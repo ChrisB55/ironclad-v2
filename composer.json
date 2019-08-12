@@ -20,6 +20,7 @@
         "drupal/console": "^1",
         "drupal/core": "^8.6.15",
         "drupal/devel": "^2.1",
+        "drupal/views_slideshow": "^4.6",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~8",
         "pantheon-systems/quicksilver-pushback": "~1",
