@@ -1,5 +1,5 @@
 const config = {
-  base: 'http://dev-ironclad.pantheonsite.io/'
+  base: 'http://dev-ironclad-v2.pantheonsite.io/'
 };
 
 const JSONAPI_ROOT = `${config.base}/jsonapi/`;
@@ -42,7 +42,7 @@ class App extends React.Component {
   updateData(destination, responseData, validate = true) {
     const validatedData = this.checkInvalidData(responseData, validate);
     if (validatedData || validate === false) {
-      this.setState({ [destination]: responseData }, () =>
+      this.setState({[destination]: responseData}, () =>
         console.log(this.state)
       );
     }
@@ -211,11 +211,11 @@ class NodeDelete extends React.Component {
   }
 
   showConfirm() {
-    this.setState({ confirm: true });
+    this.setState({confirm: true});
   }
 
   cancelDelete() {
-    this.setState({ confirm: false });
+    this.setState({confirm: false});
   }
 
   render() {
@@ -282,7 +282,7 @@ class NodeEdit extends React.Component {
   }
 
   handleChange(event, target) {
-    this.setState({ input: { [target]: event.target.value } }, () =>
+    this.setState({input: {[target]: event.target.value}}, () =>
       console.log(this.state)
     );
   }
@@ -347,12 +347,12 @@ class NodeItem extends React.Component {
   }
 
   showEdit(e) {
-    this.setState({ showEdit: true });
+    this.setState({showEdit: true});
     e.preventDefault();
   }
 
   cancelEdit() {
-    this.setState({ showEdit: false });
+    this.setState({showEdit: false});
   }
 
   render() {
@@ -403,7 +403,7 @@ class NodeItem extends React.Component {
 
 class NodeList extends React.Component {
   render() {
-    let { data, patchNode, deleteNode } = this.props;
+    let {data, patchNode, deleteNode} = this.props;
     return (
       <div>
         {data !== null &&
@@ -457,7 +457,7 @@ class NodeNew extends React.Component {
   }
 
   handleChange(event, target) {
-    this.setState({ input: { [target]: event.target.value } }, () =>
+    this.setState({input: {[target]: event.target.value}}, () =>
       console.log(this.state)
     );
   }
@@ -466,7 +466,7 @@ class NodeNew extends React.Component {
     this.postNode();
     event.preventDefault();
     // Clear out form.
-    this.setState({ input: { title: '' } });
+    this.setState({input: {title: ''}});
     document.getElementById('post-body').value = '';
   }
 
