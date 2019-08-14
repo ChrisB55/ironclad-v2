@@ -3,6 +3,6 @@ publica_access.default_controller_hello:
   path: '/publica_access'
   defaults:
     _controller: '\Drupal\publica_access\Controller\DefaultController::hello'
-    _title: 'Publica Access Controller'
+    _title: 'Publica Access'
   requirements:
     _permission: 'access content'
